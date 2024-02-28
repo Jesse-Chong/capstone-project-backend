@@ -1,4 +1,3 @@
-// const express = require('express');
 const axios = require("axios");
 const cors = require("cors");
 const app = require("./app.js");
@@ -11,7 +10,3 @@ app.use(cors());
 app.listen(PORT, () => {
   console.log(`Proxy server is running on http://localhost:${PORT}`);
 });
-
-//testing
-
-// testing branchname Natyka
