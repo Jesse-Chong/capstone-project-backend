@@ -1,6 +1,22 @@
 \c maps_places;
+  user_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  user_name VARCHAR(50) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  preferred_language TEXT,
+  documents TEXT
 
-INSERT INTO places (place_id, name, formatted_address, formatted_phone_number, rating, website, opening_hours, photo_reference, photo_url, latitude, longitude)
+INSERT INTO users (user_id, first_name, last_name, user_name, email, password_hash, preferred_language, documents)
+VALUES
+('Natyka', 'Callwood', 'Natty', 'natyka@email.com', 'password123', 'english'),
+('Christine', 'Marchese', 'Catwoman', 'christine@email.com', 'password456', 'english'),
+('Jameel', 'Ibrahim', 'Jameel', 'jameel@email.com', 'password789', 'english'),
+('Jesse', 'Chong', 'J-Steezy', 'jesse@email.com', 'password321', 'english'),
+('Carlos', 'Godoy', 'Superman', 'carlos@email.com', 'password654', 'english');
+
+INSERT INTO places (id, place_id, name, formatted_address, formatted_phone_number, rating, website, opening_hours, photo_reference, photo_url, latitude, longitude)
   VALUES
 (
   'ChIJTdDmyzpZwokRTpyw5FZIq_U',
