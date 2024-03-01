@@ -16,7 +16,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE places (
-  id SERIAL PRIMARY KEY,
+  resource_id SERIAL PRIMARY KEY,
   place_id VARCHAR(1000),
   name VARCHAR(255),
   formatted_address VARCHAR(1000),
@@ -28,4 +28,14 @@ CREATE TABLE places (
   photo_url VARCHAR(1000),
   latitude FLOAT,
   longitude FLOAT
+);
+
+CREATE TABLE favorite (
+  favorite_id SERIAL PRIMARY KEY,
+  user_id integer REFERENCES users(user_id),
+  name text,
+  url text,
+  category text,
+  is_favorite boolean,
+  resource_id integer REFERENCES places(resource_id)
 );
