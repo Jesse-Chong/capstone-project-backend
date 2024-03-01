@@ -8,7 +8,7 @@ VALUES
 ('Jesse', 'Chong', 'J-Steezy', 'jesse@email.com', 'password321', 'english'),
 ('Carlos', 'Godoy', 'Superman', 'carlos@email.com', 'password654', 'english');
 
-INSERT INTO places (id, place_id, name, formatted_address, formatted_phone_number, rating, website, opening_hours, photo_reference, photo_url, latitude, longitude)
+INSERT INTO places (resource_id, place_id, name, formatted_address, formatted_phone_number, rating, website, opening_hours, photo_reference, photo_url, latitude, longitude)
   VALUES
 (
   'ChIJTdDmyzpZwokRTpyw5FZIq_U',
@@ -23,3 +23,11 @@ INSERT INTO places (id, place_id, name, formatted_address, formatted_phone_numbe
   40.7401792, 
   -73.9493851
 );
+
+INSERT INTO favorite(user_id, name, url, category, is_favorite, resource_id) VALUES
+ ('1', 'Borden Avenue Veterans Residence', 'https://www.nyc.gov/site/dhs/shelter/singleadults/veterans-shelter.page', 'pending', 'true', '1');
+
+ 
+
+
+
