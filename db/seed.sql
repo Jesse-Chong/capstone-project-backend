@@ -25,7 +25,7 @@ INSERT INTO places (resource_id, place_id, name, formatted_address, formatted_ph
 );
 
 INSERT INTO favorite(user_id, name, url, category, is_favorite, resource_id) VALUES
- ('1', 'Borden Avenue Veterans Residence', 'https://www.nyc.gov/site/dhs/shelter/singleadults/veterans-shelter.page', 'pending', 'true', '1');
+ ('1', 'Borden Avenue Veterans Residence','https://www.nyc.gov/site/dhs/shelter/singleadults/veterans-shelter.page','pending','true','1');
 
  
 
