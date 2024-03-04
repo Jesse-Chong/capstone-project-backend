@@ -11,8 +11,7 @@ CREATE TABLE users (
   user_name VARCHAR(50) NOT NULL,
   email VARCHAR(255) NOT NULL UNIQUE,
   password_hash VARCHAR(255) NOT NULL,
-  preferred_language TEXT,
-  documents TEXT
+  preferred_language TEXT
 );
 
 CREATE TABLE places (
@@ -25,17 +24,16 @@ CREATE TABLE places (
   website VARCHAR(255),
   opening_hours JSONB,
   photo_reference VARCHAR(1000),
-  photo_url VARCHAR(1000),
   latitude FLOAT,
   longitude FLOAT
 );
 
 CREATE TABLE favorite (
   favorite_id SERIAL PRIMARY KEY,
-  user_id integer REFERENCES users(user_id),
-  name text,
-  url text,
-  category text,
-  is_favorite boolean,
-  resource_id integer REFERENCES places(resource_id)
+  user_id INTEGER REFERENCES users(user_id),
+  name TEXT,
+  url TEXT,
+  category TEXT,
+  is_favorite BOOLEAN,
+  resource_id INTEGER REFERENCES places(resource_id)
 );
