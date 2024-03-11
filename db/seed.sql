@@ -8,7 +8,7 @@ VALUES
 ('Jesse', 'Chong', 'J-Steezy', 'jesse@email.com', 'password321', 'english'),
 ('Carlos', 'Godoy', 'Superman', 'carlos@email.com', 'password654', 'english');
 
-INSERT INTO places (place_id, name, formatted_address, formatted_phone_number, rating, website, opening_hours, photo_reference,latitude,longitude)
+INSERT INTO places (place_id, name, formatted_address, formatted_phone_number, rating, website, opening_hours, photo_reference,photo_url,latitude,longitude)
   VALUES
 (
   'ChIJTdDmyzpZwokRTpyw5FZIq_U',
