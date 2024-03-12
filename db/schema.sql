@@ -24,6 +24,7 @@ CREATE TABLE places (
   website VARCHAR(255),
   opening_hours JSONB,
   photo_reference VARCHAR(1000),
+  photo_url VARCHAR(1000),
   latitude FLOAT,
   longitude FLOAT
 );
