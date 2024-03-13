@@ -6,6 +6,7 @@ const app = express();
 const API_KEY = process.env.GOOGLE_API_KEY;
 const DB_USER = process.env.DB_USER;
 const DB_PASSWORD = process.env.DB_PASSWORD;
+const lokalise = require('./lokalise')
 const { Pool } = require('pg');
 // Middleware
 app.use(cors());
@@ -23,6 +24,8 @@ const pool = new Pool({
 app.get("/", (req, res) => {
   res.send("This is the home");
 });
+
+app.get('/translations/:lang', lokalise.getTranslations);
 
 // ***** The route the get a list by category
 app.get('/places', async (req, res) => {
