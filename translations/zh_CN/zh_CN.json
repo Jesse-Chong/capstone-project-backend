@@ -1,0 +1,21 @@
+{
+    "borough.bronx": "布朗克斯",
+    "borough.brooklyn": "布鲁克林",
+    "borough.manhattan": "曼哈顿",
+    "borough.queens": "皇后区",
+    "borough.staten_island": "斯塔滕岛",
+    "button.back": "后退",
+    "food_bank": "食物银行",
+    "googlemap.header": "附近地点",
+    "homeless_shelter": "无家可归者收容所",
+    "infoWindow.address": "地址",
+    "infoWindow.name": "姓名",
+    "infoWindow.noDetails": "无可用详细信息",
+    "infoWindow.openingHours": "营业时间",
+    "infoWindow.phone": "电话",
+    "infoWindow.rating": "评分",
+    "infoWindow.website": "网站",
+    "job_agency": "就业机构",
+    "landing.city": "选择您的位置",
+    "landing.language": "选择你的语言"
+}

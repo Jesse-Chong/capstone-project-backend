@@ -1,0 +1,21 @@
+{
+    "borough.bronx": "Bronx",
+    "borough.brooklyn": "Brooklyn",
+    "borough.manhattan": "Manhattan",
+    "borough.queens": "Queens",
+    "borough.staten_island": "Staten Island",
+    "button.back": "Go back",
+    "food_bank": "Food Bank",
+    "googlemap.header": "Nearby Places",
+    "homeless_shelter": "Homeless Shelters",
+    "infoWindow.address": "Address",
+    "infoWindow.name": "Name",
+    "infoWindow.noDetails": "No details available",
+    "infoWindow.openingHours": "Opening Hours",
+    "infoWindow.phone": "Phone",
+    "infoWindow.rating": "Rating",
+    "infoWindow.website": "Website",
+    "job_agency": "Job Agencies",
+    "landing.city": "Choose your location",
+    "landing.language": "Choose your language"
+}

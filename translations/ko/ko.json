@@ -1,0 +1,21 @@
+{
+    "borough.bronx": "브롱크스",
+    "borough.brooklyn": "브루클린",
+    "borough.manhattan": "맨해튼",
+    "borough.queens": "퀸즈",
+    "borough.staten_island": "스태튼 아일랜드",
+    "button.back": "뒤쪽에",
+    "food_bank": "푸드뱅크",
+    "googlemap.header": "주변 장소",
+    "homeless_shelter": "노숙자 보호소",
+    "infoWindow.address": "주소",
+    "infoWindow.name": "이름",
+    "infoWindow.noDetails": "세부정보가 없습니다.",
+    "infoWindow.openingHours": "개관 시간",
+    "infoWindow.phone": "핸드폰",
+    "infoWindow.rating": "평가",
+    "infoWindow.website": "웹사이트",
+    "job_agency": "직업 소개소",
+    "landing.city": "귀하의 위치를 선택하세요",
+    "landing.language": "당신의 언어를 고르시 오"
+}

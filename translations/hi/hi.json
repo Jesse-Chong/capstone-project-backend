@@ -1,0 +1,21 @@
+{
+    "borough.bronx": "ब्रोंक्स",
+    "borough.brooklyn": "ब्रुकलीन",
+    "borough.manhattan": "मैनहट्टन",
+    "borough.queens": "क्वींस",
+    "borough.staten_island": "स्टेटन द्वीप",
+    "button.back": "पीछे",
+    "food_bank": "खाद्य बैंक",
+    "googlemap.header": "निकटवर्ती स्थान",
+    "homeless_shelter": "बेघर आश्रय",
+    "infoWindow.address": "पता",
+    "infoWindow.name": "नाम",
+    "infoWindow.noDetails": "कोई विवरण उपलब्ध नहीं है",
+    "infoWindow.openingHours": "खुलने का समय",
+    "infoWindow.phone": "फ़ोन",
+    "infoWindow.rating": "रेटिंग",
+    "infoWindow.website": "वेबसाइट",
+    "job_agency": "नौकरी एजेंसियां",
+    "landing.city": "अपना स्थान चुनें",
+    "landing.language": "अपनी भाषा चुनें"
+}

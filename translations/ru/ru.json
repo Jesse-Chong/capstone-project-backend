@@ -1,0 +1,21 @@
+{
+    "borough.bronx": "Бронкс",
+    "borough.brooklyn": "Бруклин",
+    "borough.manhattan": "Манхэттен",
+    "borough.queens": "Квинс",
+    "borough.staten_island": "Статен-Айленд",
+    "button.back": "Назад",
+    "food_bank": "Продовольственный банк",
+    "googlemap.header": "Места поблизости",
+    "homeless_shelter": "Приюты для бездомных",
+    "infoWindow.address": "Адрес",
+    "infoWindow.name": "Имя",
+    "infoWindow.noDetails": "Подробности отсутствуют",
+    "infoWindow.openingHours": "Часы работы",
+    "infoWindow.phone": "Телефон",
+    "infoWindow.rating": "Рейтинг",
+    "infoWindow.website": "Веб-сайт",
+    "job_agency": "Агентства по трудоустройству",
+    "landing.city": "Выберите свое местоположение",
+    "landing.language": "Выберите ваш язык"
+}
