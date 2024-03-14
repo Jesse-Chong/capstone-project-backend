@@ -5,8 +5,19 @@
     "borough.queens": "क्वींस",
     "borough.staten_island": "स्टेटन द्वीप",
     "button.back": "पीछे",
+    "copyright": "कॉपीराइट",
     "food_bank": "खाद्य बैंक",
     "googlemap.header": "निकटवर्ती स्थान",
+    "home.banking": "बैंकिंग सेवाएं",
+    "home.category": "अपनी श्रेणी चुनें",
+    "home.dmv": "डीएमवी सेवाएँ",
+    "home.education": "शिक्षा",
+    "home.faith": "आस्था आधारित सेवाएँ",
+    "home.food_banks": "खाद्य बैंक",
+    "home.government_services": "शासकीय सेवाएं",
+    "home.healthcare": "स्वास्थ्य देखभाल",
+    "home.housing": "आवास",
+    "home.jobs": "नौकरियां",
     "homeless_shelter": "बेघर आश्रय",
     "infoWindow.address": "पता",
     "infoWindow.name": "नाम",
@@ -17,5 +28,6 @@
     "infoWindow.website": "वेबसाइट",
     "job_agency": "नौकरी एजेंसियां",
     "landing.city": "अपना स्थान चुनें",
-    "landing.language": "अपनी भाषा चुनें"
+    "landing.language": "अपनी भाषा चुनें",
+    "mission_statement": "आप्रवासियों के लिए एक निर्बाध परिवर्तन बनाना ताकि वे अपनी आवश्यक जानकारी तक पहुंच सकें। जब आप्रवासी आते हैं तो उन्हें उन संसाधनों की जानकारी नहीं होती जिनकी उन्हें आवश्यकता हो सकती है। अमेरिका में प्रवास करने वाले आप्रवासियों के लिए कानूनी और सटीक जानकारी प्रदान करने के लिए जानकारी एक ऐप में उपलब्ध है और उपयोगकर्ताओं को अपनी भाषा चुनने में भी सक्षम बनाती है।"
 }

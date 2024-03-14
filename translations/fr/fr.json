@@ -5,8 +5,19 @@
     "borough.queens": "Reines",
     "borough.staten_island": "Staten Island",
     "button.back": "Dos",
+    "copyright": "droits d'auteur",
     "food_bank": "Banque alimentaire",
     "googlemap.header": "Lieux à proximité",
+    "home.banking": "Services bancaires",
+    "home.category": "Choisissez votre catégorie",
+    "home.dmv": "Services DMV",
+    "home.education": "Éducation",
+    "home.faith": "Services confessionnels",
+    "home.food_banks": "Banques alimentaires",
+    "home.government_services": "Services gouvernementaux",
+    "home.healthcare": "Soins de santé",
+    "home.housing": "Logement",
+    "home.jobs": "Emplois",
     "homeless_shelter": "Refuges pour sans-abri",
     "infoWindow.address": "Adresse",
     "infoWindow.name": "Nom",
@@ -17,5 +28,6 @@
     "infoWindow.website": "Site web",
     "job_agency": "Agences d'emploi",
     "landing.city": "Choisissez votre emplacement",
-    "landing.language": "Choisissez votre langue"
+    "landing.language": "Choisissez votre langue",
+    "mission_statement": "Créer une transition fluide pour les immigrants afin qu’ils puissent accéder à l’information dont ils ont besoin. Lorsque les immigrants arrivent, ils ne connaissent pas les ressources dont ils peuvent avoir besoin. Fournir des informations légales et précises aux immigrants qui immigrent aux États-Unis. Les informations sont accessibles dans une seule application et permettent également aux utilisateurs de choisir leur langue."
 }

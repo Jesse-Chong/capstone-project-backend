@@ -5,8 +5,19 @@
     "borough.queens": "皇后区",
     "borough.staten_island": "斯塔滕岛",
     "button.back": "后退",
+    "copyright": "版权",
     "food_bank": "食物银行",
     "googlemap.header": "附近地点",
+    "home.banking": "银行服务",
+    "home.category": "选择您的位置",
+    "home.dmv": "车管所服务",
+    "home.education": "教育",
+    "home.faith": "基于信仰的服务",
+    "home.food_banks": "食品银行",
+    "home.government_services": "政府服务",
+    "home.healthcare": "卫生保健",
+    "home.housing": "住房",
+    "home.jobs": "工作",
     "homeless_shelter": "无家可归者收容所",
     "infoWindow.address": "地址",
     "infoWindow.name": "姓名",
@@ -17,5 +28,6 @@
     "infoWindow.website": "网站",
     "job_agency": "就业机构",
     "landing.city": "选择您的位置",
-    "landing.language": "选择你的语言"
+    "landing.language": "选择你的语言",
+    "mission_statement": "为移民创造无缝过渡，以便他们能够获取所需的信息。当移民到达时，他们不知道自己可能需要什么资源。为移民美国的移民提供合法、准确的信息 该信息可在一个应用程序中访问，并且用户还可以选择自己的语言。"
 }
