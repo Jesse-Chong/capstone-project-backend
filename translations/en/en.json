@@ -5,8 +5,19 @@
     "borough.queens": "Queens",
     "borough.staten_island": "Staten Island",
     "button.back": "Go back",
+    "copyright": "Copyright",
     "food_bank": "Food Bank",
     "googlemap.header": "Nearby Places",
+    "home.banking": "Banking Services",
+    "home.category": "Choose your category",
+    "home.dmv": "DMV Services",
+    "home.education": "Education",
+    "home.faith": "Faith Based Services",
+    "home.food_banks": "Food Banks",
+    "home.government_services": "Government Services",
+    "home.healthcare": "Healthcare",
+    "home.housing": "Housing",
+    "home.jobs": "Jobs",
     "homeless_shelter": "Homeless Shelters",
     "infoWindow.address": "Address",
     "infoWindow.name": "Name",
@@ -17,5 +28,6 @@
     "infoWindow.website": "Website",
     "job_agency": "Job Agencies",
     "landing.city": "Choose your location",
-    "landing.language": "Choose your language"
+    "landing.language": "Choose your language",
+    "mission_statement": "To create a seamless transition for immigrants so they can access the information they need. When immigrants arrive they are not aware of the resources they may need. To provide legal and accurate information for immigrants who are immigrating to the U.S. The information is accessible in one app and also enables users to choose their language."
 }

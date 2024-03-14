@@ -5,8 +5,19 @@
     "borough.queens": "",
     "borough.staten_island": "",
     "button.back": "",
+    "copyright": "",
     "food_bank": "",
     "googlemap.header": "",
+    "home.banking": "",
+    "home.category": "",
+    "home.dmv": "",
+    "home.education": "",
+    "home.faith": "",
+    "home.food_banks": "",
+    "home.government_services": "",
+    "home.healthcare": "",
+    "home.housing": "",
+    "home.jobs": "",
     "homeless_shelter": "",
     "infoWindow.address": "",
     "infoWindow.name": "",
@@ -17,5 +28,6 @@
     "infoWindow.website": "",
     "job_agency": "",
     "landing.city": "",
-    "landing.language": ""
+    "landing.language": "",
+    "mission_statement": ""
 }
