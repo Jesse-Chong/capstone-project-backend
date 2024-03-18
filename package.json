@@ -3,11 +3,13 @@
     "@lokalise/node-api": "^12.1.0",
     "adm-zip": "^0.5.10",
     "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.2",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "i18next-http-backend": "^2.5.0",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.11.3",
     "pg-promise": "^11.5.4"
   },
