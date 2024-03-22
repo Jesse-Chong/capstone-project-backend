@@ -1,7 +1,6 @@
 const express = require("express")
 const users = express.Router()
 require("dotenv").config()
-// Package to generate tokens to authenticate users when sending requests
 const jwt = require("jsonwebtoken")
 const secret = process.env.SECRET
 const {getUsers, createUser, logInUser} = require("../queries/users")
@@ -15,10 +14,10 @@ users.get("/", async (req, res) => {
     }
 })
 
-users.post("/signup", async (req, res) => {
+users.post("/", async (req, res) => {
     try {
         const newUser = await createUser(req.body)
-        const token = jwt.sign({userId: newUser.user_id, username: newUser.username}, secret)
+        const token = jwt.sign({userId: newUser.user_id, email: newUser.email}, secret)
         res.status(201).json({user: newUser, token})
     } catch (error) {
         res.status(500).json({error: "Invalid Information", info: error})
@@ -32,12 +31,13 @@ users.post("/login", async (req, res) => {
             res.status(401).json({error: "Invalid username or password"})
             return
         }
-        const token = jwt.sign({userId: user.user_id, username: user.username}, secret)
+        const token = jwt.sign({userId: user.user_id, email: user.email}, secret)
         res.status(200).json({
             user: {
             user_id: user.user_id,
-            username: user.username,
-            email: user.email,
+            first_name: user.first_name,
+            last_name: user.last_name,
+            email: user.email
             },
             token
         })
