@@ -1,20 +1,18 @@
 const db = require("../db/dbConfig")
-// Import library to hash password
 const bcrypt = require("bcrypt")
 
 const createUser = async (user) => {
     try {
-       const {username, email, password_hash} = user
+       const {first_name, last_name, email, password_hash} = user
        const salt = 10
        const hash = await bcrypt.hash(password_hash, salt)
-       const newUser = await db.one("INSERT INTO users (username, email, password_hash) VALUES($1, $2, $3) RETURNING *", [username, email, hash])
+       const newUser = await db.one("INSERT INTO users (first_name, last_name, email, password_hash) VALUES($1, $2, $3, $4) RETURNING *", [first_name, last_name, email, hash])
        return newUser
     } catch (error) {
         return error
     }
 }
 
-// GET all Users (only for development or Admin purposes)
 const getUsers = async () => {
     try {
         const users = await db.any("SELECT * FROM users")
@@ -26,7 +24,7 @@ const getUsers = async () => {
 
 const logInUser = async (user) => {
     try {
-        const loggedInUser = await db.oneOrNone("SELECT * FROM users WHERE username=$1", user.username)
+        const loggedInUser = await db.oneOrNone("SELECT * FROM users WHERE email=$1", user.email)
         if(!loggedInUser){
             return false
         }
@@ -36,7 +34,7 @@ const logInUser = async (user) => {
         }
         return loggedInUser
     } catch (error) {
-        
+        return error
     }
 }
 

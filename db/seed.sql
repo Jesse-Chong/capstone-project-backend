@@ -1,12 +1,12 @@
 \c maps_places;
 
-INSERT INTO users (first_name, last_name, user_name, email, password_hash, preferred_language)
+INSERT INTO users (first_name, last_name, email, password_hash)
 VALUES
-('Natyka', 'Callwood', 'Natty', 'natyka@email.com', 'password123', 'english'),
-('Christine', 'Marchese', 'Catwoman', 'christine@email.com', 'password456', 'english'),
-('Jameel', 'Ibrahim', 'Jameel', 'jameel@email.com', 'password789', 'english'),
-('Jesse', 'Chong', 'J-Steezy', 'jesse@email.com', 'password321', 'english'),
-('Carlos', 'Godoy', 'Superman', 'carlos@email.com', 'password654', 'english');
+('Natyka', 'Callwood', 'natyka@email.com', 'password123'),
+('Christine', 'Marchese', 'christine@email.com', 'password456'),
+('Jameel', 'Ibrahim', 'jameel@email.com', 'password789'),
+('Jesse', 'Chong', 'jesse@email.com', 'password321'),
+('Carlos', 'Godoy', 'carlos@email.com', 'password654');
 
 INSERT INTO places (place_id, name, formatted_address, formatted_phone_number, rating, website, opening_hours, photo_reference,photo_url,latitude,longitude)
   VALUES

@@ -3,7 +3,6 @@ require("dotenv").config()
 const secret = process.env.SECRET
 
 const authenticateToken = (req, res, next) => {
-    // Get the value from the header called "Authorization" that came in with the request
     const token = req.header("Authorization")
     if(!token){
         return res.status(401).json({error: "Access Denied. No token provided"})
