@@ -8,9 +8,11 @@ const DB_USER = process.env.DB_USER;
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const lokalise = require('./lokalise')
 const { Pool } = require('pg');
+const userController = require("./controllers/usersController");
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use("/users", userController);
 
 const pool = new Pool({
   user: DB_USER,
