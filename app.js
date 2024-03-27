@@ -8,12 +8,9 @@ const DB_USER = process.env.DB_USER;
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const lokalise = require('./lokalise')
 const { Pool } = require('pg');
-const userController = require("./controllers/usersController")
-
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use("/users", userController)
 
 const pool = new Pool({
   user: DB_USER,
@@ -50,21 +47,35 @@ app.get('/places', async (req, res) => {
 
 // **** this is to show info window 
 app.get('/placeDetails', async (req, res) => {
-    const url = 'https://maps.googleapis.com/maps/api/place/details/json'
-  
-    try {
+  const url = 'https://maps.googleapis.com/maps/api/place/details/json';
+  try {
+    const { place_id } = req.query;
+    if (!place_id) {
+      return res.status(400).json({ message: 'Missing place_id parameter' });
+    }
+    
+    // Convert the comma-separated string of place IDs into an array
+    const placeIds = place_id.split(',');
+    
+    // Create an array of promises for each place ID
+    const placeDetailsPromises = placeIds.map(async (placeId) => {
       const result = await axios.get(url, {
         params: {
-        key: API_KEY,
-        ...req.query 
+          key: API_KEY,
+          place_id: placeId
         }
       });
-      res.json(result.data);
-      console.log(result.data);
-  
-    } catch (error) {
-      res.status(500).json({message: error.message}); 
-    }
-  })
+      return result.data;
+    });
+    
+    // Wait for all the promises to resolve
+    const placeDetailsResults = await Promise.all(placeDetailsPromises);
+    
+    res.json(placeDetailsResults);
+    console.log('Place details:', placeDetailsResults);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 module.exports = app;
