@@ -80,4 +80,26 @@ app.get('/placeDetails', async (req, res) => {
   }
 });
 
+app.get("/api/directions", async (req, res) => {
+  const { origin, destination } = req.query;
+
+  try {
+    const response = await axios.get(
+      "https://maps.googleapis.com/maps/api/directions/json",
+      {
+        params: {
+          origin,
+          destination,
+          key: API_KEY
+        },
+      }
+    );
+    console.log(response);
+    res.json(response.data);
+  } catch (error) {
+    console.error("Error fetching directions:", error);
+    res.status(500).json({ error: "Error fetching directions" });
+  }
+});
+
 module.exports = app;
