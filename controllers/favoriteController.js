@@ -1,5 +1,5 @@
 const express = require("express");
-const favorite = express.Router();
+const favoritepractice = express.Router();
 const {
   getAllFavorites,
   getFavorite,
@@ -8,7 +8,7 @@ const {
   deleteFavorite,
 } = require("../queries/favorite.js");
 
-favorite.get("/", async (req, res) => {
+favoritepractice.get("/", async (req, res) => {
   const allFavorite = await getAllFavorites();
   console.log(allFavorite);
   if (allFavorite[0]) {
@@ -18,7 +18,7 @@ favorite.get("/", async (req, res) => {
   }
 });
 
-favorite.get("/:id", async (req, res) => {
+favoritepractice.get("/:id", async (req, res) => {
   const { id } = req.params;
   // const oneFavorite = await getFavorite(id);
   // if (oneFavorite) {
@@ -34,13 +34,13 @@ favorite.get("/:id", async (req, res) => {
   }
 });
 
-favorite.post("/", async (req, res) => {
+favoritepractice.post("/", async (req, res) => {
   const body = req.body;
   const document = await createFavorite(body);
   res.status(200).json(document);
 });
 
-favorite.delete("/:id", async (req, res) => {
+favoritepractice.delete("/:id", async (req, res) => {
   // const { id } = req.params;
   // const deletedfavorite = await deleteFavorite(id);
   // if (deletedfavorite.id) {
@@ -57,7 +57,7 @@ favorite.delete("/:id", async (req, res) => {
   }
 });
 
-favorite.put("/:id", async (req, res) => {
+favoritepractice.put("/:id", async (req, res) => {
   const { id } = req.params;
   const body = req.body;
   const updatedFavorite = await updateFavorite(id, body);
@@ -68,4 +68,4 @@ favorite.put("/:id", async (req, res) => {
   }
 });
 
-module.exports = favorite;
+module.exports = favoritepractice;
