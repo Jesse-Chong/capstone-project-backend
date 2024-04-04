@@ -28,12 +28,21 @@ CREATE TABLE places (
   longitude FLOAT
 );
 
+-- CREATE TABLE favorite (
+--   favorite_id SERIAL PRIMARY KEY,
+--   user_id INTEGER REFERENCES users(user_id),
+--   name TEXT,
+--   url TEXT,
+--   category TEXT,
+--   is_favorite BOOLEAN,
+--   resource_id INTEGER REFERENCES places(resource_id)
+-- );
+
 CREATE TABLE favorite (
   favorite_id SERIAL PRIMARY KEY,
-  user_id INTEGER REFERENCES users(user_id),
-  name TEXT,
-  url TEXT,
-  category TEXT,
   is_favorite BOOLEAN,
-  resource_id INTEGER REFERENCES places(resource_id)
+  category TEXT,
+  name TEXT,
+  image TEXT, 
+  user_id INTEGER REFERENCES users(user_id) ON DELETE CASCADE
 );
