@@ -21,17 +21,17 @@ const getFavorite = async (id) => {
   }
 };
 
-const createFavorite = async (document) => {
-  try {
-    const newFavorite = await db.one(
-      "INSERT INTO favorite (name, image, is_favorite, user_id) VALUES ($1, $2, $3, $4) RETURNING *",
-      [document.name, document.image, document.is_favorite, document.user_id]
-    );
-    return newFavorite;
-  } catch (error) {
-    return error;
-  }
-};
+// const createFavorite = async (document) => {
+//   try {
+//     const newFavorite = await db.one(
+//       "INSERT INTO favorite (name, image, is_favorite, user_id) VALUES ($1, $2, $3, $4) RETURNING *",
+//       [document.name, document.image, document.is_favorite, document.user_id]
+//     );
+//     return newFavorite;
+//   } catch (error) {
+//     return error;
+//   }
+// };
 
 const deleteFavorite = async (id) => {
   try {
@@ -45,28 +45,28 @@ const deleteFavorite = async (id) => {
   }
 };
 
-const updateFavorite = async (id, document) => {
-  try {
-    const updatedFavorite = await db.one(
-      "UPDATE favorite SET name=$1, image=$2, is_favorite=$3, user_id=$4 WHERE id=$5 RETURNING *",
-      [
-        document.name,
-        document.image,
-        document.is_favorite,
-        document.user_id,
-        id,
-      ]
-    );
-    return updatedFavorite;
-  } catch (error) {
-    return error;
-  }
-};
+// const updateFavorite = async (id, document) => {
+//   try {
+//     const updatedFavorite = await db.one(
+//       "UPDATE favorite SET name=$1, image=$2, is_favorite=$3, user_id=$4 WHERE id=$5 RETURNING *",
+//       [
+//         document.name,
+//         document.image,
+//         document.is_favorite,
+//         document.user_id,
+//         id,
+//       ]
+//     );
+//     return updatedFavorite;
+//   } catch (error) {
+//     return error;
+//   }
+// };
 
 module.exports = {
   getAllFavorites,
   getFavorite,
-  createFavorite,
+  // createFavorite,
   deleteFavorite,
-  updateFavorite,
+  // updateFavorite,
 };
