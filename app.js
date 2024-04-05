@@ -15,7 +15,7 @@ const favoriteController = require("./controllers/favoriteController");
 app.use(cors());
 app.use(express.json());
 app.use("/users", userController);
-app.use("/favoritepractice", favoriteController);
+app.use("/favorite", favoriteController);
 
 const pool = new Pool({
   user: DB_USER,
