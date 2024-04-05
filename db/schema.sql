@@ -43,6 +43,6 @@ CREATE TABLE favorite (
   is_favorite BOOLEAN,
   category TEXT,
   name TEXT,
-  image TEXT, 
-  user_id INTEGER REFERENCES users(user_id) ON DELETE CASCADE
+  image TEXT
+  -- user_id INTEGER REFERENCES users(user_id) ON DELETE CASCADE
 );
