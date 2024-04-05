@@ -1,5 +1,5 @@
 const express = require("express");
-const favoritepractice = express.Router();
+const favorite = express.Router();
 const {
   getAllFavorites,
   getFavorite,
@@ -8,7 +8,7 @@ const {
   deleteFavorite,
 } = require("../queries/favorite.js");
 
-favoritepractice.get("/", async (req, res) => {
+favorite.get("/", async (req, res) => {
   const allFavorite = await getAllFavorites();
   console.log(allFavorite);
   if (allFavorite[0]) {
@@ -18,7 +18,7 @@ favoritepractice.get("/", async (req, res) => {
   }
 });
 
-favoritepractice.get("/:id", async (req, res) => {
+favorite.get("/:id", async (req, res) => {
   const { id } = req.params;
   // const oneFavorite = await getFavorite(id);
   // if (oneFavorite) {
@@ -40,7 +40,7 @@ favoritepractice.get("/:id", async (req, res) => {
 //   res.status(200).json(document);
 // });
 
-favoritepractice.delete("/:id", async (req, res) => {
+favorite.delete("/:id", async (req, res) => {
   // const { id } = req.params;
   // const deletedfavorite = await deleteFavorite(id);
   // if (deletedfavorite.id) {
@@ -68,4 +68,4 @@ favoritepractice.delete("/:id", async (req, res) => {
 //   }
 // });
 
-module.exports = favoritepractice;
+module.exports = favorite;
