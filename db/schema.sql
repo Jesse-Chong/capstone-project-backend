@@ -46,3 +46,8 @@ CREATE TABLE favorite (
   image TEXT
   -- user_id INTEGER REFERENCES users(user_id) ON DELETE CASCADE
 );
+
+CREATE TABLE users_favorite (
+  user_id INTEGER REFERENCES users(user_id) ON DELETE CASCADE,
+  favorite_id INTEGER REFERENCES favorite(favorite_id) ON DELETE CASCADE
+);
