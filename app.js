@@ -10,12 +10,14 @@ const lokalise = require("./lokalise");
 const { Pool } = require("pg");
 const userController = require("./controllers/usersController");
 const favoriteController = require("./controllers/favoriteController");
+const usersFavoritesController = require("./controllers/usersFavorite");
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use("/users", userController);
 app.use("/favorite", favoriteController);
+app.use("/users-favorites", usersFavoritesController)
 
 const pool = new Pool({
   user: DB_USER,
