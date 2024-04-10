@@ -21,17 +21,17 @@ const getFavorite = async (id) => {
   }
 };
 
-// const createFavorite = async (document) => {
-//   try {
-//     const newFavorite = await db.one(
-//       "INSERT INTO favorite (name, image, is_favorite, user_id) VALUES ($1, $2, $3, $4) RETURNING *",
-//       [document.name, document.image, document.is_favorite, document.user_id]
-//     );
-//     return newFavorite;
-//   } catch (error) {
-//     return error;
-//   }
-// };
+const createFavorite = async (document) => {
+  try {
+    const newFavorite = await db.one(
+      "INSERT INTO favorite (name, image, is_favorite) VALUES ($1, $2, $3) RETURNING *",
+      [document.name, document.image, document.is_favorite]
+    );
+    return newFavorite;
+  } catch (error) {
+    return error;
+  }
+};
 
 const deleteFavorite = async (id) => {
   try {
@@ -66,7 +66,7 @@ const deleteFavorite = async (id) => {
 module.exports = {
   getAllFavorites,
   getFavorite,
-  // createFavorite,
+  createFavorite,
   deleteFavorite,
   // updateFavorite,
 };
