@@ -4,6 +4,7 @@ CREATE DATABASE maps_places;
 
 \c maps_places;
 
+DROP TABLE users;
 CREATE TABLE users (
   user_id SERIAL PRIMARY KEY,
   first_name VARCHAR(50) NOT NULL,
@@ -13,6 +14,7 @@ CREATE TABLE users (
   preferred_language TEXT
 );
 
+DROP TABLE places;
 CREATE TABLE places (
   resource_id SERIAL PRIMARY KEY,
   place_id VARCHAR(1000),
@@ -28,25 +30,16 @@ CREATE TABLE places (
   longitude FLOAT
 );
 
--- CREATE TABLE favorite (
---   favorite_id SERIAL PRIMARY KEY,
---   user_id INTEGER REFERENCES users(user_id),
---   name TEXT,
---   url TEXT,
---   category TEXT,
---   is_favorite BOOLEAN,
---   resource_id INTEGER REFERENCES places(resource_id)
--- );
-
+DROP TABLE favorite;
 CREATE TABLE favorite (
   favorite_id SERIAL PRIMARY KEY,
   is_favorite BOOLEAN,
   category TEXT,
   name TEXT,
   image TEXT
-  -- user_id INTEGER REFERENCES users(user_id) ON DELETE CASCADE
 );
 
+DROP TABLE users_favorite;
 CREATE TABLE users_favorite (
   user_id INTEGER REFERENCES users(user_id) ON DELETE CASCADE,
   favorite_id INTEGER REFERENCES favorite(favorite_id) ON DELETE CASCADE
