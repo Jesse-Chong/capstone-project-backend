@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const AdmZip = require("adm-zip");
-const axios = require("axios");
+// const axios = require("axios");
 const API_KEY = process.env.LOKALISE_API_KEY;
 const PROJECT_ID = process.env.LOKALISE_PROJECT_ID;
 
