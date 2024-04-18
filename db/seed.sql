@@ -25,10 +25,10 @@ INSERT INTO places (place_id, name, formatted_address, formatted_phone_number, r
 );
 
 INSERT INTO favorite (is_favorite, category, name, image) VALUES 
-  (true, 'DMV', 'Driver License', 'https://dmv.ny.gov/forms/id44.pdf'),
-(true, 'HealthCare', 'Health Insurance', 'https://www.health.ny.gov/forms/doh-4220.pdf'),
-(true, 'Food', 'Food Stamp', 'https://otda.ny.gov/programs/applications/4826.pdf'),
-(true, 'Jobs', 'Resume Template - 1', 'https://app.enhancv.com/resume/new?example=template-creative&color=4C4C67,222F5C&fromLanding=true'),
-(false, 'Jobs', 'Resume Template - 2', 'https://app.enhancv.com/resume/new?example=template-ivy-league&color=000000,6F7878&fromLanding=true'),
-(true, 'Jobs', 'Resume Template - 3', 'https://app.enhancv.com/resume/new?example=template-junior&color=002878,FF6E01/&fromLanding=true'),
-(false, 'Government Services', 'Social Security', 'https://www.ssa.gov/forms/ss-5.pdf');
+(true, 'DMV / DMV', 'Driver License / Licencia de Conducir', 'https://dmv.ny.gov/forms/id44.pdf'),
+(true, 'HealthCare / Cuidado de la salud', 'Health Insurance / Seguro de salud', 'https://www.health.ny.gov/forms/doh-4220.pdf'),
+(true, 'Food / Comida', 'Food Stamp / Cupones de Comida', 'https://otda.ny.gov/programs/applications/4826.pdf'),
+(true, 'Jobs / Trabajos', 'Resume Template - 1 / Plantilla del Curriculum Vitae - 1', 'https://app.enhancv.com/resume/new?example=template-creative&color=4C4C67,222F5C&fromLanding=true'),
+(false, 'Jobs / Trabajos', 'Resume Template - 2 / Plantilla del Curriculum Vitae -2', 'https://app.enhancv.com/resume/new?example=template-ivy-league&color=000000,6F7878&fromLanding=true'),
+(true, 'Jobs / Trabajos', 'Resume Template - 3 / Plantilla del Curriculum Vitae - 3', 'https://app.enhancv.com/resume/new?example=template-junior&color=002878,FF6E01/&fromLanding=true'),
+(false, 'Government Services / Servicios Gubernamentales', 'Social Security / Seguridad Social', 'https://www.ssa.gov/forms/ss-5.pdf');
